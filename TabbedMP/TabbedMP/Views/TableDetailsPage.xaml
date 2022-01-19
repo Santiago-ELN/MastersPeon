@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:TabbedMP.ViewModels" x:DataType="viewmodels:TableDetailsViewModel"
+             x:Class="TabbedMP.Views.TableDetailsPage"
+             Title="{Binding Title}">
+    <ScrollView>
+        <StackLayout Spacing="20" Padding="15">
+        <Label Text="Nome:" FontSize="Medium" />
+        <Label Text="{Binding Name}" FontSize="Small"/>
+        <Label Text="Raça:" FontSize="Medium" />
+        <Label Text="{Binding Race}" FontSize="Small"/>
+        <Label Text="Classe:" FontSize="Medium" />
+        <Label Text="{Binding Klass}" FontSize="Small"/>
+        <Label Text="Nível:" FontSize="Medium" />
+        <Label Text="{Binding Level}" FontSize="Small"/>
+        <Label Text="EXP:" FontSize="Medium" />
+        <Label Text="{Binding EXP}" FontSize="Small"/>
+        <Label Text="CON:" FontSize="Medium" />
+        <Label Text="{Binding CON}" FontSize="Small"/>
+        <Label Text="DES:" FontSize="Medium" />
+        <Label Text="{Binding DEX}" FontSize="Small"/>
+        <Label Text="FOR:" FontSize="Medium" />
+        <Label Text="{Binding STR}" FontSize="Small"/>
+        <Label Text="SAB:" FontSize="Medium" />
+        <Label Text="{Binding WIS}" FontSize="Small"/>
+        <Label Text="INT:" FontSize="Medium" />
+        <Label Text="{Binding INTEL}" FontSize="Small"/>
+        <Label Text="CAR:" FontSize="Medium" />
+        <Label Text="{Binding CHA}" FontSize="Small"/>
+        <Label Text="P.V. Max:" FontSize="Medium" />
+        <Label Text="{Binding HP_max}" FontSize="Small"/>
+        <Label Text="P.V. Atuais:" FontSize="Medium" />
+        <Label Text="{Binding HP_curr}" FontSize="Small"/>
+        <Label Text="Deslocamento:" FontSize="Medium" />
+        <Label Text="{Binding Speed}" FontSize="Small"/>
+        <Label Text="C.A.:" FontSize="Medium" />
+        <Label Text="{Binding Armor_class}" FontSize="Small"/>
+        
+        <Button x:Name="TableDel"
+                Text="Apagar"
+                Command="{Binding Del}"/>
+    </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TabbedMP.Views.NewTablePage"
+             Shell.PresentationMode="ModalAnimated"
+             Title="New Item"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="3" Padding="15">
+                        <Label Text="Nome" FontSize="Medium" />
+                        <Entry Text="{Binding Name, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Classe" FontSize="Medium" />
+                        <Entry Text="{Binding Klass, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Raça" FontSize="Medium" />
+                        <Entry Text="{Binding Race, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Nível" FontSize="Medium" />
+                        <Entry Text="{Binding Level, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="EXP" FontSize="Medium" />
+                        <Entry Text="{Binding EXP, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="CON" FontSize="Medium" />
+                        <Entry Text="{Binding CON, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="DES" FontSize="Medium" />
+                        <Entry Text="{Binding DEX, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="FOR" FontSize="Medium" />
+                        <Entry Text="{Binding STR, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="SAB" FontSize="Medium" />
+                        <Entry Text="{Binding WIS, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="CAR" FontSize="Medium" />
+                        <Entry Text="{Binding CHAR, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="INT" FontSize="Medium" />
+                        <Entry Text="{Binding INTEL, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="P.V. Temp." FontSize="Medium" />
+                        <Entry Text="{Binding HP_temp, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="P.V. Max" FontSize="Medium" />
+                        <Entry Text="{Binding HP_max, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Dado de Vida" FontSize="Medium" />
+                        <Entry Text="{Binding HP_dice, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Deslocamento" FontSize="Medium" />
+                        <Entry Text="{Binding Speed, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Nome" FontSize="Medium" />
+                        <Entry Text="{Binding Armor_class, Mode=TwoWay}" FontSize="Medium" />
+
+                        <Label Text="Proficiência" FontSize="Medium" />
+                        <Entry Text="{Binding Proff_bonus, Mode=TwoWay}" FontSize="Medium" />
+
+                        <!--<Label Text="Tipo" FontSize="Medium" />
+            <Entry Text="{Binding Tag, Mode=TwoWay}" FontSize="Medium" />
+            !-->
+
+                        <StackLayout Orientation="Horizontal">
+                            <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+                            <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand"></Button>
+                        </StackLayout>
+                    </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>
