@@ -1,0 +1,8 @@
+AboutPage => Maps
+ItemDetailPage => TableDetails
+ItemsPage => Tables
+NewItemPage => NewTable
+
+Item => eBase
+
+MockDataStore => DBService

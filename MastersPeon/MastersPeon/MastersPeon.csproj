@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="SQLiteNetExtensions" Version="2.1.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\AddTablePage.xaml.cs">
+      <DependentUpon>AddTablePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TableListPage.xaml.cs">
+      <DependentUpon>TableListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\TableDetailsPage.xaml.cs">
+      <DependentUpon>TableDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\MapsPage.xaml.cs">
+      <DependentUpon>MapsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
