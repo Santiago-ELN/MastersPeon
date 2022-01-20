@@ -86,7 +86,13 @@ namespace MastersPeon.Models
 
         //Entity aggregation data
         public eTag Tag { get; set; }
-
+        /// <summary>
+        /// Converts attributes into their modifiers
+        /// </summary>
+        /// <param name="att">Int value of the modifier</param>
+        /// <param name="mod">Defines if the wanted value is the attribute or it's modifier</param>
+        /// <param name="T">The attType of the attribute, being CON, STR or others. Null if conversion is only by value</param>
+        /// <returns>If T is null, the modifier of the value passed. Else, the value of the attribute or it's modifier (mod)</returns>
         private int attconvo(int att, bool mod, object T)
         {
             double val;
